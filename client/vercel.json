@@ -1,10 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "builds": [
     {
       "src": "package.json",
@@ -14,6 +8,11 @@
       }
     }
   ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "framework": "vite"
 }
