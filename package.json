@@ -1,0 +1,35 @@
+{
+  "name": "aurameter",
+  "version": "1.0.0",
+  "description": "Indian Gen-Z vibe-based AI aura meter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "both": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "prod": "cross-env NODE_ENV=production node server.js"
+  },
+  "keywords": [
+    "ai",
+    "aura",
+    "genz",
+    "india"
+  ],
+  "author": "AuraMeter",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
